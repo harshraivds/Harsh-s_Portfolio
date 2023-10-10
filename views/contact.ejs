@@ -1,0 +1,29 @@
+<%- include("partials/header.ejs") %>
+<div class="container mt-5">
+    <h1>Contact Us</h1>
+    <form id="contactForm" action="/submit" method="post">
+        <div class="form-group">
+            <label for="name">Name:</label>
+            <input type="text" class="form-control" id="name" name="name" required>
+        </div>
+        <div class="form-group">
+            <label for="email">Email:</label>
+            <input type="email" class="form-control" id="email" name="email" required>
+        </div>
+        <div class="form-group">
+            <label for="message">Message:</label>
+            <textarea class="form-control" id="message" name="message" rows="5" required></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary mt-2">Submit</button>
+    </form>
+</div><hr>
+<div class="px-4 text-center">
+  <h1 class="display-4 fw-bold text-body-emphasis">Resume</h1>
+    <div class="d-grid gap-2 d-sm-flex justify-content-sm-center mb-5">
+      <a href="../public/Harsh-Rai-B.Tech.-ComputerScience&Engineering-2023-10-10-14-46-30-045915.pdf" download>
+        <button type="button" class="btn btn-primary btn-lg px-4 me-sm-3">Download</button>
+      </a>      
+    </div>
+</div>
+
+<%- include("partials/footer.ejs") %>
